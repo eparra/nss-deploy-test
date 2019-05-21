@@ -150,7 +150,7 @@
   "variables": {
     "sourceOSvhdURL": "https://zsprod.blob.core.windows.net/nss/znss_osdisk.vhd",
     "sourceDataVHDurl": "https://zsprod.blob.core.windows.net/nss/znss_datadisk.vhd",
-    "scriptUrl": "https://raw.githubusercontent.com/eparra/nss-deploy-test/master/copyvhd.ps1",
+    "scriptUrl": "https://raw.githubusercontent.com/eparra/nss-deploy-test/master/scripts/copyvhd.ps1",
     "vhdStorageAccountNamePrefix": "vhdstorage",
     "vhdStorageAccountName": "[toLower(concat(variables('vhdStorageAccountNamePrefix'), uniqueString(subscription().id, resourceGroup().id, deployment().name)))]",
     "vhdStorageAccountSKU": "Standard_LRS",
@@ -165,11 +165,11 @@
     "psModules": {
       "azAccounts": {
         "name": "Az.Accounts",
-        "url": "https://github.com/eparra/nss-deploy-test/raw/master/az.accounts.1.5.1.nupkg"
+        "url": "https://github.com/eparra/nss-deploy-test/raw/master/assets/az.accounts.1.5.1.nupkg"
       },
       "azStorage": {
         "name": "Az.Storage",
-        "url": "https://github.com/eparra/nss-deploy-test/raw/master/az.storage.1.2.0.nupkg"
+        "url": "https://github.com/eparra/nss-deploy-test/raw/master/assets/az.storage.1.2.0.nupkg"
       }
     },
     "subnetRef": "[resourceId(parameters('virtualNetworkResourceGroup'), 'Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworkName'),  parameters('subnetName'))]",
