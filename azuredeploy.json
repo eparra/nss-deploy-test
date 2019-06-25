@@ -50,7 +50,7 @@
     },
     "virtualNetworkName": {
       "type": "string",
-      "defaultValue": "NSS-vNet",
+      "defaultValue": "Zscaler-NSS-VNET",
       "metadata": {
         "description": "If vNetNewOrExisting is set to existing, than specify the Virtual Network that alredy exist. If vNetNewOrExisting is set to new, than provide name for the new Virtual Network. Existing Virtual Network must be located in the same location as to where this template is being deployed. The name must begin with a letter or number, end with a letter, number or underscore, and may contain only letters, numbers, underscores, periods, or hyphens. The name must be between 2 and 64 characters."
       }
@@ -64,30 +64,30 @@
     },
     "vNetAddressRange": {
       "type": "string",
-      "defaultValue": "10.0.0.0/16",
+      "defaultValue": "192.168.100.0/24",
       "metadata": {
         "description": "Address Range of new or existing Virtual Network."
       }
     },
     "subnetName": {
       "type": "string",
-      "defaultValue": "default",
+      "defaultValue": "Zscaler-NSS-Subnet",
       "metadata": {
         "description": "If vNetNewOrExisting is set to existing, than specify the subnet that alredy exist. If vNetNewOrExisting is set to new, than provide name for the new subnet. The name must begin with a letter or number, end with a letter, number or underscore, and may contain only letters, numbers, underscores, periods, or hyphens. The name must be between 1 and 80 characters."
       }
     },
     "subnetAddressRange": {
       "type": "string",
-      "defaultValue": "10.0.0.0/24",
+      "defaultValue": "192.168.100.0/25",
       "metadata": {
         "description": "Address Range of new or existing Subnet."
       }
     },
     "vmName": {
       "type": "string",
-      "defaultValue": "NSS-VM",
+      "defaultValue": "Zscaler-NSS-VM",
       "metadata": {
-        "description": "Name of the VM."
+        "description": "Name of the Virtual Machine (VM)"
       }
     },
     "vmSize": {
@@ -99,9 +99,9 @@
     },
     "networkSecurityGroupName": {
       "type": "string",
-      "defaultValue": "NSS-VM-NSG",
+      "defaultValue": "Zscaler-NSS-NSG",
       "metadata": {
-        "description": "Name of the new Network Security Group."
+        "description": "Name of the new Network Security Group (NSG)"
       }
     },
     "publicIPAddress1name": {
@@ -109,40 +109,40 @@
       "metadata": {
         "description": "Name of the new Public IP Address that will be associated with the primary Network Interface Card."
       },
-      "defaultValue": "NSS-VM-IP1"
+      "defaultValue": "Zscaler-NSS-VM-IP1"
     },
     "publicIPAddress2name": {
       "type": "string",
       "metadata": {
         "description": "Name of the new Public IP Address that will be associated with the secondary Network Interface Card."
       },
-      "defaultValue": "NSS-VM-IP2"
+      "defaultValue": "Zscaler-NSS-VM-IP2"
     },
     "nic1name": {
       "type": "string",
       "metadata": {
         "description": "Name of the new primary Network Interface Card."
       },
-      "defaultValue": "NSS-VM-NIC1"
+      "defaultValue": "Zscaler-NSS-VM-NIC1"
     },
     "nic2name": {
       "type": "string",
       "metadata": {
         "description": "Name of the new secondary Network Interface Card."
       },
-      "defaultValue": "NSS-VM-NIC2"
+      "defaultValue": "Zscaler-NSS-VM-NIC2"
     },
     "automationJob1ID": {
       "type": "string",
       "metadata": {
-        "description": "Please, don't change this parameter. This parameter is used internally and must be set to [newGuid()] in order for the deployment to be successful."
+        "description": "Please, don't change this parameter. This parameter must be [newGuid()] in order for the deployment to be successful."
       },
       "defaultValue": "[newGuid()]"
     },
     "automationJob2ID": {
       "type": "string",
       "metadata": {
-        "description": "Please, don't change this parameter. This parameter is used internally and must be set to [newGuid()] in order for the deployment to be successful."
+        "description": "Please, don't change this parameter. This parameter must be set to [newGuid()] in order for the deployment to be successful."
       },
       "defaultValue": "[newGuid()]"
     }
