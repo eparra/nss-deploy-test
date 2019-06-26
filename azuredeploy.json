@@ -165,11 +165,11 @@
     "psModules": {
       "azAccounts": {
         "name": "Az.Accounts",
-        "url": "https://devopsgallerystorage.blob.core.windows.net/packages/az.accounts.1.5.1.nupkg"
+        "url": "https://github.com/eparra/nss-deploy-test/raw/master/assets/az.accounts.1.5.1.nupkg"
       },
       "azStorage": {
         "name": "Az.Storage",
-        "url": "https://devopsgallerystorage.blob.core.windows.net/packages/az.storage.1.2.0.nupkg"
+        "url": "https://github.com/eparra/nss-deploy-test/raw/master/assets/az.storage.1.2.0.nupkg"
       }
     },
     "subnetRef": "[resourceId(parameters('virtualNetworkResourceGroup'), 'Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworkName'),  parameters('subnetName'))]",
