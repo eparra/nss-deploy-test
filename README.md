@@ -1,4 +1,4 @@
-Zscaler NSS Azure Resource Manager (RM) Template
+# Zscaler NSS Azure Resource Manager (RM) Template
 
 This is a repository for Azure Resoure Manager (ARM) template to Zscaler NSS in Azure cloud.
 
