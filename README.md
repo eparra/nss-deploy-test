@@ -1,8 +1,8 @@
-<aside class="warning">
-You must replace `meowmeowmeow` with your personal API key.
-</aside>
-
 # Zscaler NSS Azure Resource Manager (ARM) Template
+
+<aside class="warning">
+You must replace `meowmeowmeow` with your personal API key!
+</aside>
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Feparra%2Fnss-deploy-test%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
