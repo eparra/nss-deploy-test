@@ -17,4 +17,4 @@ This is a repository for Azure Resoure Manager (ARM) template to Zscaler NSS in 
 Support:
 --------
 
-These templates are released under an as-is, best effort, support policy.  These scripts should be seen as community supported and Zscaler will contribute expertise, as and when possible.  Zscaler will not not provide technical support or help in using or troubleshooting the components of the project through Zscaler support
+These templates are released under an as-is, best effort, support policy.  At this time, these scripts should be seen as community supported and Zscaler will contribute expertise, as and when possible.  
