@@ -21,7 +21,7 @@ This sample code, at this time, is only a sample and is NOT guaranteed to be bug
 
 ## Support
 
-These templates are released under an as-is, best effort, support basis.  At this time, these scripts should be seen as community supported, and Zscaler will contribute expertise, as and when possible.  
+All files contained in this repository are supported under an as-is, best effort, basis.  Zscaler will contribute expertise, as and when possible.
 
 ## References
 
