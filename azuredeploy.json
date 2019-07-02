@@ -131,20 +131,6 @@
         "description": "Name of the new secondary Network Interface Card."
       },
       "defaultValue": "Zscaler-NSS-VM-NIC2"
-    },
-    "automationJob1ID": {
-      "type": "string",
-      "metadata": {
-        "description": "Please, don't change this parameter. This parameter must be [newGuid()] in order for the deployment to be successful."
-      },
-      "defaultValue": "[newGuid()]"
-    },
-    "automationJob2ID": {
-      "type": "string",
-      "metadata": {
-        "description": "Please, don't change this parameter. This parameter must be set to [newGuid()] in order for the deployment to be successful."
-      },
-      "defaultValue": "[newGuid()]"
     }
   },
   "variables": {
@@ -174,7 +160,11 @@
     },
     "subnetRef": "[resourceId(parameters('virtualNetworkResourceGroup'), 'Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworkName'),  parameters('subnetName'))]",
     "destinationOSvhdURL": "[concat('https://',variables('vhdStorageAccountName'), '.blob.core.windows.net/', variables('vhdStorageAccountContainerName'), '/', variables('destOSvhdName'))]",
-    "destinationDataVHDurl": "[concat('https://',variables('vhdStorageAccountName'), '.blob.core.windows.net/', variables('vhdStorageAccountContainerName'), '/', variables('destDataVHDname'))]"
+    "destinationDataVHDurl": "[concat('https://',variables('vhdStorageAccountName'), '.blob.core.windows.net/', variables('vhdStorageAccountContainerName'), '/', variables('destDataVHDname'))]",
+    "uniqueBase1": "[toLower(uniqueString(parameters('virtualNetworkName'), resourceGroup().id))]",
+    "uniqueBase2": "[toLower(uniqueString(parameters('vmName'), resourceGroup().id))]",
+    "guid1": "[concat(substring(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(concat(variables('uniqueBase1'),variables('uniqueBase1'),substring(variables('uniqueBase1'),0,10)),'g','0'),'h','1'),'i','2'),'j','3'),'k','4'),'l','5'),'m','6'),'n','7'),'o','8'),'p','9'),'q','a'),'r','b'),'s','c'),'t','d'),'u','e'),'v','f'),'w','0'),'x','1'),'y','2'),'z','3'),0,8),'-',substring(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(concat(variables('uniqueBase1'),variables('uniqueBase1'),substring(variables('uniqueBase1'),0,10)),'g','0'),'h','1'),'i','2'),'j','3'),'k','4'),'l','5'),'m','6'),'n','7'),'o','8'),'p','9'),'q','a'),'r','b'),'s','c'),'t','d'),'u','e'),'v','f'),'w','0'),'x','1'),'y','2'),'z','3'),9,4),'-',substring(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(concat(variables('uniqueBase1'),variables('uniqueBase1'),substring(variables('uniqueBase1'),0,10)),'g','0'),'h','1'),'i','2'),'j','3'),'k','4'),'l','5'),'m','6'),'n','7'),'o','8'),'p','9'),'q','a'),'r','b'),'s','c'),'t','d'),'u','e'),'v','f'),'w','0'),'x','1'),'y','2'),'z','3'),14,4),'-',substring(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(concat(variables('uniqueBase1'),variables('uniqueBase1'),substring(variables('uniqueBase1'),0,10)),'g','0'),'h','1'),'i','2'),'j','3'),'k','4'),'l','5'),'m','6'),'n','7'),'o','8'),'p','9'),'q','a'),'r','b'),'s','c'),'t','d'),'u','e'),'v','f'),'w','0'),'x','1'),'y','2'),'z','3'),19,4),'-',substring(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(concat(variables('uniqueBase1'),variables('uniqueBase1'),substring(variables('uniqueBase1'),0,10)),'g','0'),'h','1'),'i','2'),'j','3'),'k','4'),'l','5'),'m','6'),'n','7'),'o','8'),'p','9'),'q','a'),'r','b'),'s','c'),'t','d'),'u','e'),'v','f'),'w','0'),'x','1'),'y','2'),'z','3'),24,12))]",
+    "guid2": "[concat(substring(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(concat(variables('uniqueBase2'),variables('uniqueBase2'),substring(variables('uniqueBase2'),0,10)),'g','0'),'h','1'),'i','2'),'j','3'),'k','4'),'l','5'),'m','6'),'n','7'),'o','8'),'p','9'),'q','a'),'r','b'),'s','c'),'t','d'),'u','e'),'v','f'),'w','0'),'x','1'),'y','2'),'z','3'),0,8),'-',substring(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(concat(variables('uniqueBase2'),variables('uniqueBase2'),substring(variables('uniqueBase2'),0,10)),'g','0'),'h','1'),'i','2'),'j','3'),'k','4'),'l','5'),'m','6'),'n','7'),'o','8'),'p','9'),'q','a'),'r','b'),'s','c'),'t','d'),'u','e'),'v','f'),'w','0'),'x','1'),'y','2'),'z','3'),9,4),'-',substring(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(concat(variables('uniqueBase2'),variables('uniqueBase2'),substring(variables('uniqueBase2'),0,10)),'g','0'),'h','1'),'i','2'),'j','3'),'k','4'),'l','5'),'m','6'),'n','7'),'o','8'),'p','9'),'q','a'),'r','b'),'s','c'),'t','d'),'u','e'),'v','f'),'w','0'),'x','1'),'y','2'),'z','3'),14,4),'-',substring(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(concat(variables('uniqueBase2'),variables('uniqueBase2'),substring(variables('uniqueBase2'),0,10)),'g','0'),'h','1'),'i','2'),'j','3'),'k','4'),'l','5'),'m','6'),'n','7'),'o','8'),'p','9'),'q','a'),'r','b'),'s','c'),'t','d'),'u','e'),'v','f'),'w','0'),'x','1'),'y','2'),'z','3'),19,4),'-',substring(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(replace(concat(variables('uniqueBase2'),variables('uniqueBase2'),substring(variables('uniqueBase2'),0,10)),'g','0'),'h','1'),'i','2'),'j','3'),'k','4'),'l','5'),'m','6'),'n','7'),'o','8'),'p','9'),'q','a'),'r','b'),'s','c'),'t','d'),'u','e'),'v','f'),'w','0'),'x','1'),'y','2'),'z','3'),24,12))]"
   },
   "resources": [
     {
@@ -275,7 +265,7 @@
           }
         },
         {
-          "name": "[parameters('automationJob1ID')]",
+          "name": "[variables('guid1')]",
           "type": "jobs",
           "apiVersion": "2015-01-01-preview",
           "location": "[parameters('location')]",
@@ -300,7 +290,7 @@
           }
         },
         {
-          "name": "[parameters('automationJob2ID')]",
+          "name": "[variables('guid2')]",
           "type": "jobs",
           "apiVersion": "2015-01-01-preview",
           "location": "[parameters('location')]",
@@ -683,8 +673,8 @@
       "dependsOn": [
         "[resourceId('Microsoft.Network/networkInterfaces', parameters('nic1name'))]",
         "[resourceId('Microsoft.Network/networkInterfaces', parameters('nic2name'))]",
-        "[concat('Microsoft.Automation/automationAccounts/', variables('automationAccountName'), '/', 'jobs', '/', parameters('automationJob1ID'))]",
-        "[concat('Microsoft.Automation/automationAccounts/', variables('automationAccountName'), '/', 'jobs', '/', parameters('automationJob2ID'))]"
+        "[concat('Microsoft.Automation/automationAccounts/', variables('automationAccountName'), '/', 'jobs', '/', variables('guid1'))]",
+        "[concat('Microsoft.Automation/automationAccounts/', variables('automationAccountName'), '/', 'jobs', '/', variables('guid2'))]"
       ],
       "properties": {
         "hardwareProfile": {
