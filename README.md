@@ -14,7 +14,7 @@
 
 ## Overview
 
-This repository contains an Azure Resoure Manager (ARM) template for deploying Zscaler NSS in Azure cloud.  This repository is for new development and testing.  This repository is not supported by Zscaler at this time.
+This repository contains an Azure Resoure Manager (ARM) template for deploying Zscaler NSS in Azure cloud.  This repository is for development / testing and is not supported by Zscaler at this time.
 
 **Documentation**
 
