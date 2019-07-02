@@ -21,6 +21,9 @@ This is a repository for Azure Resoure Manager (ARM) template to Zscaler NSS in 
 - [About Nanolog Streamign Service](https://help.zscaler.com/zia/about-nanolog-streaming-service)
 - [Technical documentation](https://help.zscaler.com/zia/documentation-knowledgebase/analytics/nss)
 
+**Note**
+- This ARM template will launch (EDDIE TO EDIT LATER)
+
 ## Support
 
 These templates are released under an as-is, best effort, support policy.  At this time, these scripts should be seen as community supported, and Zscaler will contribute expertise, as and when possible.  
