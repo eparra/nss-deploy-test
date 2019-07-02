@@ -1,3 +1,7 @@
+<aside class="warning">
+You must replace `meowmeowmeow` with your personal API key.
+</aside>
+
 # Zscaler NSS Azure Resource Manager (ARM) Template
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Feparra%2Fnss-deploy-test%2Fmaster%2Fazuredeploy.json" target="_blank">
@@ -26,4 +30,4 @@ This is a repository for Azure Resoure Manager (ARM) template to Zscaler NSS in 
 
 ## Support
 
-These templates are released under an as-is, best effort, support policy.  At this time, these scripts should be seen as community supported, and Zscaler will contribute expertise, as and when possible.  
+These templates are released under an as-is, best effort, support basis.  At this time, these scripts should be seen as community supported, and Zscaler will contribute expertise, as and when possible.  
