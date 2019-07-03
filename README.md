@@ -13,17 +13,14 @@
 </a>
 
 ## Overview
-
 This repository contains an Azure Resoure Manager (ARM) template for deploying Zscaler Nanolog Streaming Service (NSS) in Azure cloud.  This repository is under active development and is for testing only.  This repository is not supported by Zscaler at this time.
 
 **Disclaimer**
-This sample code, at this time, is only a sample and is NOT guaranteed to be bug free and production quality. This is NOT intended to be used in production environment. Using this code is at your own risk.
+The files contained in this repository are NOT guaranteed to be bug free and production quality. This is NOT intended to be used in production environment, at this time. Using this code is at your own risk.
 
 ## Support
-
 All files contained in this repository are supported under an as-is, best effort, basis.  Zscaler will contribute expertise, as and when possible.
 
 ## References
-
 - [About Nanolog Streaming Service](https://help.zscaler.com/zia/about-nanolog-streaming-service)
 - [Technical documentation](https://help.zscaler.com/zia/documentation-knowledgebase/analytics/nss)
