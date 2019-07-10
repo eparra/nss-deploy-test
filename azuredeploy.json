@@ -107,30 +107,30 @@
     "publicIPAddress1name": {
       "type": "string",
       "metadata": {
-        "description": "Name of the new Public IP Address that will be associated with the primary Network Interface Card."
+        "description": "Name of the new Public IP Address that will be associated with MGMT NIC."
       },
-      "defaultValue": "Zscaler-NSS-VM-IP1"
+      "defaultValue": "Zscaler-NSS-MGMT-IP"
     },
     "publicIPAddress2name": {
       "type": "string",
       "metadata": {
-        "description": "Name of the new Public IP Address that will be associated with the secondary Network Interface Card."
+        "description": "Name of the new Public IP Address that will be associated with SRVC NIC."
       },
-      "defaultValue": "Zscaler-NSS-VM-IP2"
+      "defaultValue": "Zscaler-NSS-SRVC-IP"
     },
     "nic1name": {
       "type": "string",
       "metadata": {
-        "description": "Name of the new primary Network Interface Card."
+        "description": "Name of the new Management Network Interface Card (NIC)."
       },
-      "defaultValue": "Zscaler-NSS-VM-NIC1"
+      "defaultValue": "Zscaler-NSS-MGMT-NIC"
     },
     "nic2name": {
       "type": "string",
       "metadata": {
-        "description": "Name of the new secondary Network Interface Card."
+        "description": "Name of the new Service Network Interface Card (NIC)."
       },
-      "defaultValue": "Zscaler-NSS-VM-NIC2"
+      "defaultValue": "Zscaler-NSS-SRVC-NIC"
     }
   },
   "variables": {
