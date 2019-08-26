@@ -17,8 +17,7 @@ This repository contains an Azure Resoure Manager (ARM) template for deploying Z
 
 ## Support Reporting Issues
 
-If you have bugs or other issues specifically pertaining to this library, file them [here]
-(https://github.com/zscaler/nss-azure-deploy/issues)
+If you have bugs or other issues specifically pertaining to this library, file them [here](https://github.com/zscaler/nss-azure-deploy/issues)
 
 ## Licensing
 
