@@ -139,7 +139,7 @@
     "scriptUrl": "https://raw.githubusercontent.com/eparra/nss-deploy-test/master/scripts/copyvhd.ps1",
     "vhdStorageAccountNamePrefix": "vhdstorage",
     "vhdStorageAccountName": "[toLower(concat(variables('vhdStorageAccountNamePrefix'), uniqueString(subscription().id, resourceGroup().id, deployment().name)))]",
-    "vhdStorageAccountSKU": "Standard_LRS",
+    "vhdStorageAccountSKU": "Premium_LRS",
     "vhdStorageAccountContainerName": "zscalernsscontainerprod",
     "destOSvhdName": "znss_osdisk.vhd",
     "destDataVHDname": "znss_datadisk.vhd",
