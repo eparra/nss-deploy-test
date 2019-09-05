@@ -690,7 +690,7 @@
             },
             "caching": "ReadWrite",
             "writeAcceleratorEnabled": false,
-            "diskSizeGB": 30
+            "diskSizeGB": 50
           },
           "dataDisks": [
             {
